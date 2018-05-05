@@ -1,0 +1,83 @@
+body {
+    background-image:url("stars.jpg");
+    background-attachment: fixed;
+}
+
+#main {
+    background-color:rgba(42, 42, 141, 0.144);
+    text-align: center;
+}
+
+#leftcard {
+    background-color: rgba(53, 53, 104, 0.39);
+    border: white 2px;
+    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+    width: 33%;
+}
+
+#middlecard {
+    background-color: rgba(53, 71, 104, 0.911);
+    border: white 2px;
+    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+    width: 33%;
+}
+
+#rightcard {
+    background-color: rgba(53, 53, 104, 0.377);
+    border: white 2px;
+    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+    width: 33%;
+}
+
+#title {
+    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 75px;
+}
+
+.row {
+    text-align:center;
+}
+
+#maindiv {
+    align-content: center;
+}
+
+li {
+    text-align: left;
+}
+#rightul {
+    text-align: center;
+    margin-left: 80px;
+}
+#leftul {
+    text-align: left;
+}
+
+h2 {
+    padding: 35px;
+}
+
+#addbtn {
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(14, 14, 46, 0.815);
+    padding: 12px 28px;
+
+}
+
+#addlabel {
+    font-size: 20px;
+}
+
+.devburg {
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(14, 14, 46, 0.815);
+    border-radius: 8px;
+}
+

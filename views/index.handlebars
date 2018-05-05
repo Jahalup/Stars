@@ -1,56 +1,68 @@
-<h1>Burgers!</h1>
-
-<h2>Ready to be Eat</h2>
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-<ul>
-  {{#each burgers}}
-   {{#unless devoured}}
-  <li>
-    <p>
-      {{this.id}}. {{this.burger_name}}
-
-      <button data-id="{{this.id}}" data-devour="{{true}}" class="devburg">Devour Burger!</button>
-    </p>
-  </li>
-  {{/unless}}
-  {{/each}}
-</ul>
-</div>
-    <div class="col">
 
 
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="bu">Burger Name:</label>
-    <input type="text" id="bu" name="name">
-  </div>
-  <button type="submit">Add Burger</button>
-</form>
-
-</div>
-
-
-<div class="col">
-<h2>Devoured Burgers!</h2>
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-     <li>
-    <p>
-      {{this.id}}. {{this.burger_name}}    
-      </p>
-      </li>
-    {{/if}}
-  {{/each}}
-</ul>
-
-</div>
-
+<div class="container" id="main">
   
-    </div>
-  </div>
+   <h1 id="title">Stars</h1>
+  
+  <div id-"maindiv">
+  <div class="row">
+      <div class="card" id="leftcard">
+            <div class="card-body">
+               <div class="col">
+                 <h2>Stars to Find:</h2>
+                <ul id="leftul">
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li>
+                  <p>
+                    {{this.id}}. {{this.burger_name}}&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button data-id="{{this.id}}" data-devour="{{true}}" class="devburg">Star Found!</button>
+                  </p>
+                </li>
+                {{/unless}}
+                {{/each}}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+      <div class="card" id="middlecard">
+          <div class="card-body">
+            <div class="col">
+              <h2>Add a Star</h2>
+              <form class="create-form">
+                <div class="form-group">
+                  <label id="addlabel" for="bu">Star Name:</label>
+                  <input type="text" id="bu" name="name">
+                </div>
+              <button id="addbtn" type="submit">Add Star</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="rightcard">
+          <div class="card-body">
+            <div class="col">
+              <h2>Stars Found:</h2>
+              <ul id="rightul">
+              {{#each burgers}}
+              {{#if devoured}}
+              <li>
+                <p>
+                {{this.id}}. {{this.burger_name}}    
+                </p>
+              </li>
+              {{/if}}
+              {{/each}}
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+  
+   
