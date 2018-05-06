@@ -14,8 +14,8 @@
                 {{#each burgers}}
                 {{#unless devoured}}
                 <li>
-                  <p>
-                    {{this.id}}. {{this.burger_name}}&nbsp;&nbsp;&nbsp;&nbsp;
+                  <p class="startext">
+                    {{this.burger_name}}&nbsp;&nbsp;&nbsp;&nbsp;
                     <button data-id="{{this.id}}" data-devour="{{true}}" class="devburg">Star Found!</button>
                   </p>
                 </li>
@@ -51,8 +51,9 @@
               {{#each burgers}}
               {{#if devoured}}
               <li>
-                <p>
-                {{this.id}}. {{this.burger_name}}    
+                <p class="startext">
+                 {{this.burger_name}}&nbsp;&nbsp;&nbsp;&nbsp;    
+                 <button data-id="{{this.id}}" class="delburg">Delete Star</button>
                 </p>
               </li>
               {{/if}}

@@ -49,12 +49,9 @@ body {
 li {
     text-align: left;
 }
-#rightul {
-    text-align: center;
-    margin-left: 80px;
-}
-#leftul {
+#rightul, #leftul{
     text-align: left;
+    
 }
 
 h2 {
@@ -74,10 +71,14 @@ h2 {
     font-size: 20px;
 }
 
-.devburg {
+.devburg, .delburg {
     border: 1px solid white;
     color: white;
     background-color: rgba(14, 14, 46, 0.815);
     border-radius: 8px;
+}
+
+.startext {
+    font-size: 18px;
 }
 

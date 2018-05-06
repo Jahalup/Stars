@@ -20,7 +20,25 @@ $(function() {
         }
       );
     });
-  
+
+// delete button on click
+    $(".delburg").on("click", function(event) {
+      var id = $(this).data("id");
+      console.log("delete" + id);
+
+      // Send the delete request
+
+      $.ajax("/api/burgers/" + id, {
+        type: "DELETE"
+      }).then(
+        function() {
+         
+          location.reload();
+        }
+      );
+    });
+    
+  // Create new star on click event
     $(".create-form").on("submit", function(event) {
       event.preventDefault();
   

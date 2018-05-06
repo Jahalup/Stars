@@ -1,3 +1,12 @@
-INSERT INTO burgers (burger_name, devoured) VALUES ("Cheese", false);
-INSERT INTO burgers (burger_name, devoured) VALUES ("Veggie", false);
-INSERT INTO burgers (burger_name, devoured) VALUES ("Bacon Cheese", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Antares", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Theemin", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Altair", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Sirius", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Vega", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Betelgeuse", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Alcor", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Ursae Minoris", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Arcturus", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Bellatrix", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Copernicus", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Electra", false);

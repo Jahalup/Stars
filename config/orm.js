@@ -39,6 +39,8 @@ function objToSql(ob) {
 
   
 var orm = {
+
+  // Query to select all from db (for main index)
     all: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
       connection.query(queryString, function(err, result) {
@@ -48,16 +50,7 @@ var orm = {
         cb(result);
       });
     },
-    // all: function(cb) {
-    //   orm.all("burgers", function(res) {
-    //     cb(res);
-    //   });
-    // },
-    // add: function(cols, vals, cb) {
-    //   orm.add("burgers", cols, vals, function(res) {
-    //     cb(res);
-    //   });
-    // },
+  //  Query to ADD to db
     add: function(table, cols, vals, cb) {
         var queryString = "INSERT INTO " + table;
         queryString += " (";
@@ -78,7 +71,7 @@ var orm = {
     });
   },
 
-
+// Query to update value (star found)
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 
@@ -95,8 +88,25 @@ var orm = {
 
       cb(result);
     });
+  },
+
+// Query to DELETE from db
+  del: function(table, condition, cb) {
+    var queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
+
+    console.log(queryString);
+    connection.query(queryString, function(err, result) {
+      if(err) {
+        throw err;
+      }
+      cb(result);
+    });
   }
 };
 
-  
+  // Export the orm
      module.exports = orm;
+
+    
